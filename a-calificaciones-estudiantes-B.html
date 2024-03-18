@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horario Profesor - Secci&oacute;n A</title>
+    <title>Secci&oacute;n A - Calificaciones</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
 </head>
 <body>
+    <!-- Usamos el header -->
     <header>
         <div class="header-container">
             <div class="JES">
@@ -19,7 +20,7 @@
                     <h3>Junior Explorers System</h3>    
                 </div>
             </div>
-            <h1>Horario</h1>
+            <h1>Calificaciones</h1>
                 <nav class="menu-navegador">
                     <ul>
                         <li>
@@ -45,59 +46,66 @@
                 </nav>            
         </div>
     </header>
-    <main>     
+    <main>
+        <!-- Usamos un selector para alternar entre estudiantes y profesor -->
         <div class="selector">
-            <div class="selector-alt">
-                <a href="a_horario-estudiante.html" class="current">Estudiante</a>
-                <a href="#a-horario-profesor.html" class="current"><span>Profesor</span></a>
-            </div>
+            <form class="select">
+                <!-- Creamos las opciones para alternar entre grados -->
+                <select name="secciones" id="select" style="width: 200px; border-radius: 30px;">
+                    <option value="">1ro</option>
+                    <option value="">2do</option>
+                    <option value="">3ro</option>
+                    <option value="">4to</option>
+                    <option value="">5to</option>
+                    <option value="">6to</option>
+                </select>
+            </form>
         </div>
-
-        <section class="section-horario-admin" style="padding-bottom: 20px;">
-            <table class="tabla-registro">
+        <section style="padding-bottom: 10px;">
+            <table class="tabla-registro tabla-registro-border" style="border-radius: inherit;border-radius: 10px 10px 0 0;">
                 <tr>
                     <th>Perfil</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
                     <th>ID</th>
-                    <th>Asignatura</th>
+                    <th>Edad</th>
                     <th>Secci&oacute;n</th>
                 </tr>
                 <tr>
-                    <td><img src="imagenes/random-glasses-guy.jpeg" alt="perfil"></td>
+                    <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
                     <td>Juana</td>
                     <td>Rodriguez</td>
                     <td>#12-031-10</td>
-                    <td>C. Sociales</td>
-                    <td>A</td>
-                    <td><a href="a-asignacionHorario-profesor.html"><figure><img src="imagenes/iconos/lapiz-editar.svg" alt="" class="editar"></figure></a></td>                    
+                    <td>12</td>
+                    <td>B</td>
+                    <td><a href="a-calificaciones-B.html"><figure><img src="imagenes/iconos/Nota-admin.svg" alt="" class="editar"></figure></a></td>
                 </tr>
                 <tr>
-                    <td><img src="imagenes/random-glasses-guy.jpeg" alt="perfil"></td>
+                    <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
                     <td>Juana</td>
                     <td>Rodriguez</td>
                     <td>#12-031-10</td>
-                    <td>L. Española</td>
-                    <td>A</td>
-                    <td><a href="a-asignacionHorario-profesor.html"><figure><img src="imagenes/iconos/lapiz-editar.svg" alt="" class="editar"></figure></a></td>                   
+                    <td>12</td>
+                    <td>B</td>
+                    <td><a href="a-calificaciones-B.html"><figure><img src="imagenes/iconos/Nota-admin.svg" alt="" class="editar"></figure></a></td>
                 </tr>
                 <tr>
-                    <td><img src="imagenes/random-glasses-guy.jpeg" alt="perfil"></td>
+                    <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
                     <td>Juana</td>
                     <td>Rodriguez</td>
                     <td>#12-031-10</td>
-                    <td>C. Naturales</td>
-                    <td>A</td>
-                    <td><a href="a-asignacionHorario-profesor.html"><figure><img src="imagenes/iconos/lapiz-editar.svg" alt="" class="editar"></figure></a></td>
+                    <td>12</td>
+                    <td>B</td>
+                    <td><a href="a-calificaciones-B.html"><figure><img src="imagenes/iconos/Nota-admin.svg" alt="" class="editar"></figure></a></td>
                 </tr>
                 <tr>
-                    <td><img src="imagenes/random-glasses-guy.jpeg" alt="perfil"></td>
+                    <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
                     <td>Juana</td>
                     <td>Rodriguez</td>
                     <td>#12-031-10</td>
-                    <td>Inglés</td>
-                    <td>A</td>
-                    <td><a href="a-asignacionHorario-profesor.html"><figure><img src="imagenes/iconos/lapiz-editar.svg" alt="" class="editar"></figure></a></td>
+                    <td>12</td>
+                    <td>B</td>
+                    <td><a href="a-calificaciones-B.html"><figure><img src="imagenes/iconos/Nota-admin.svg" alt="" class="editar"></figure></a></td>
                 </tr>
             </table>
         </section>
