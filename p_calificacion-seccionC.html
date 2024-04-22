@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secci&oacute;n A - Calificaciones</title>
+    <title>Calificaciones de Estudiantes</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="imagenes/recursos/logo-jes.png">
 </head>
@@ -25,21 +25,23 @@
                     <ul>
                         <li>
                             <figure>
-                                <a href="a-home.html">
+                                <a href="p-home.html">
                                     <img src="imagenes/iconos/home.svg" alt="icono-home">
                                 </a>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <a href="a-perfil.html">
-                                    <img src="imagenes/iconos/usuario.svg" alt="icono-usuario">
+                                <a href="p-perfil.html">
+                                    <img src="imagenes/iconos/usuario.svg" alt="icono-usuario">  
                                 </a>
                             </figure>
                         </li>
                         <li>
                             <figure>
-                                <img src="imagenes/iconos/menu.svg" alt="icono-menu">
+                                <a href="#">
+                                    <img src="imagenes/iconos/menu.svg" alt="icono-menu">
+                                </a>
                             </figure>
                         </li>
                     </ul>
@@ -47,29 +49,37 @@
         </div>
     </header>
     <main>
-        <!-- Usamos un selector para alternar entre estudiantes y profesor -->
-        <div class="selector">
-            <form class="select">
-                <!-- Creamos las opciones para alternar entre grados -->
-                <select name="secciones" id="select" style="width: 200px; border-radius: 30px;">
-                    <option value="">1ro</option>
-                    <option value="">2do</option>
-                    <option value="">3ro</option>
-                    <option value="">4to</option>
-                    <option value="">5to</option>
-                    <option value="">6to</option>
-                </select>
-            </form>
-        </div>
-        <section style="padding-bottom: 10px;">
-            <table class="tabla-registro tabla-registro-border" style="border-radius: inherit;border-radius: 10px 10px 0 0;">
+        <form class="select-calificacion">
+            <select name="secciones" id="select-calificacion">
+                <option value="">1ro C</option>
+                <option value="">2do C</option>
+                <option value="">3ro C</option>
+                <option value="">4to C</option>
+                <option value="">5to C</option>
+                <option value="">6to C</option>
+            </select>
+        </form>
+        <section>
+            <!-- Creamos la tabla para colocar a los estudiantes para que el profesor pueda calificarlos -->
+            <table class="tabla-registro">
                 <tr>
+                    <!-- Creamos los titulos de la tabla -->
                     <th>Perfil</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
                     <th>ID</th>
                     <th>Edad</th>
-                    <th>Secci&oacute;n</th>
+                    <th>Email</th>
+                </tr>
+                <!-- Creamos las filas donde contendrán la información -->
+                <tr>
+                    <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
+                    <td>Juana</td>
+                    <td>Rodriguez</td>
+                    <td>#12-031-10</td>
+                    <td>12</td>
+                    <td>juanita2024@gmail.com</td>
+                    <td><a href="p-calificacionEstudiante.html"><figure><img src="imagenes/iconos/Nota.svg" alt="" class="editar editar-nota"></figure></a></td>
                 </tr>
                 <tr>
                     <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
@@ -77,8 +87,8 @@
                     <td>Rodriguez</td>
                     <td>#12-031-10</td>
                     <td>12</td>
-                    <td>B</td>
-                    <td><a href="a-calificaciones-B.html"><figure><img src="imagenes/iconos/Nota-admin.svg" alt="" class="editar"></figure></a></td>
+                    <td>juanita2024@gmail.com</td>
+                    <td><a href="#p_calificacionEstudiante.html"><figure><img src="imagenes/iconos/Nota.svg" alt="" class="editar"></figure></a></td>
                 </tr>
                 <tr>
                     <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
@@ -86,8 +96,8 @@
                     <td>Rodriguez</td>
                     <td>#12-031-10</td>
                     <td>12</td>
-                    <td>B</td>
-                    <td><a href="a-calificaciones-B.html"><figure><img src="imagenes/iconos/Nota-admin.svg" alt="" class="editar"></figure></a></td>
+                    <td>juanita2024@gmail.com</td>
+                    <td><a href="#p_calificacionEstudiante.html"><figure><img src="imagenes/iconos/Nota.svg" alt="" class="editar"></figure></a></td>
                 </tr>
                 <tr>
                     <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
@@ -95,17 +105,8 @@
                     <td>Rodriguez</td>
                     <td>#12-031-10</td>
                     <td>12</td>
-                    <td>B</td>
-                    <td><a href="a-calificaciones-B.html"><figure><img src="imagenes/iconos/Nota-admin.svg" alt="" class="editar"></figure></a></td>
-                </tr>
-                <tr>
-                    <td><img src="imagenes/recursos/man-perfil.jpeg" alt="perfil"></td>
-                    <td>Juana</td>
-                    <td>Rodriguez</td>
-                    <td>#12-031-10</td>
-                    <td>12</td>
-                    <td>B</td>
-                    <td><a href="a-calificaciones-B.html"><figure><img src="imagenes/iconos/Nota-admin.svg" alt="" class="editar"></figure></a></td>
+                    <td>juanita2024@gmail.com</td>
+                    <td><a href="#p_calificacionEstudiante.html"><figure><img src="imagenes/iconos/Nota.svg" alt="" class="editar"></figure></a></td>
                 </tr>
             </table>
         </section>
